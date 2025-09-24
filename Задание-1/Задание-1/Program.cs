@@ -10,11 +10,23 @@ namespace Задание_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Иосиф Бродский. Натюрморт");
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine("Иосиф Бродский");
+
+            Console.WriteLine(); 
+
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.WriteLine("Натюрморт");
+
+            Console.WriteLine();
+
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("Вещи и люди нас");
             Console.WriteLine("окружают. И те,");
             Console.WriteLine("и эти терзают глаз.");
             Console.WriteLine("Лучше жить в темноте.");
+
+            Console.ResetColor();
         }
     }
 }
