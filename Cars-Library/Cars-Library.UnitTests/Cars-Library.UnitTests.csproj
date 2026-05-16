@@ -6,7 +6,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{3A7E89D4-7C2C-4237-8A13-4E48DB75D8BA}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <RootNamespace>Cars_Library.UnitTests</RootNamespace>
     <AssemblyName>Cars_Library.UnitTests</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -35,6 +35,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="nunit.framework, Version=4.5.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
       <HintPath>..\packages\NUnit.4.5.1\lib\net462\nunit.framework.dll</HintPath>
@@ -62,7 +65,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CarUnitTests.cs" />
+    <Compile Include="ComissionCarUnitTests.cs" />
+    <Compile Include="NewCarUnitTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsedCarUnitTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

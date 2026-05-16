@@ -38,7 +38,7 @@ namespace CarDealershipLibrary.UnitTests
                 "JT123456789012345",
                 CarBodyType.Sedan,
                 1500000m,
-                "20.03.2026",
+                new DateTime(2026, 3, 20),
                 "Dmitriy Ivanov"
             );
         }
