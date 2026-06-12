@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Car.cs" />
     <Compile Include="CarBodyType.cs" />
+    <Compile Include="CarDealership.cs" />
     <Compile Include="CommisionCar.cs" />
     <Compile Include="NewCar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

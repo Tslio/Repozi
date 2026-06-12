@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Cars_Library
 {
-    public class Car
+    public class Car : IComparable<Car>
     {
         public string Brand { get; set; }
         public int Year { get; set; }
@@ -35,6 +35,13 @@ namespace Cars_Library
                 $"Дата продажи: {SaleDate:d}. " +   
                 $"Покупатель: {BuyerFullName}.";
             return info;
+        }
+        public int CompareTo(Car other)
+        {
+            if (Brand != other.Brand)
+                return Brand.CompareTo(other.Brand);
+            else
+                return Price.CompareTo(other.Price);
         }
     }
 }
