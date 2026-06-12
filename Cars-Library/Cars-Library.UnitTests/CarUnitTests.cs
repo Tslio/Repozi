@@ -30,6 +30,43 @@ namespace CarDealershipLibrary.UnitTests
             Assert.That(info[1], Is.EqualTo($"Тип кузова: Sedan. Цена: {1500000:C}. Дата продажи: 20.03.2026. Покупатель: Dmitriy Ivanov."));
         }
 
+        [Test]
+        public void CompareToTest()
+        {
+            var toyota = new Car(
+                "Toyota",
+                2020,
+                "VIN1",
+                CarBodyType.Sedan,
+                1500000m,
+                new DateTime(2026, 3, 20),
+                "Ivan Ivanov"
+            );
+
+            var bmw = new Car(
+                "BMW",
+                2019,
+                "VIN2",
+                CarBodyType.Wagon,
+                2000000m,
+                new DateTime(2026, 4, 15),
+                "Petr Petrov"
+            );
+
+            var toyotaCheap = new Car(
+                "Toyota",
+                2021,
+                "VIN3",
+                CarBodyType.Hatchback,
+                1200000m,
+                new DateTime(2026, 5, 10),
+                "Sergey Sidorov"
+            );
+
+            Assert.That(bmw.CompareTo(toyota), Is.LessThan(0));
+            Assert.That(toyota.CompareTo(toyotaCheap), Is.GreaterThan(0));
+            Assert.That(toyota.CompareTo(toyota), Is.EqualTo(0));
+        }
         private Car CreateTestCar()
         {
             return new Car(
