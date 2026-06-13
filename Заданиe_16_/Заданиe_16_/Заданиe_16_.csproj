@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0923AF2D-2EF0-46F1-81E6-5FEF24D7F01F}</ProjectGuid>
+    <ProjectGuid>{D01C5BF6-D4DB-49F3-B3FF-B7BC8CC6348C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Задание__16</RootNamespace>
-    <AssemblyName>Задание__16</AssemblyName>
+    <RootNamespace>Заданиe_16_</RootNamespace>
+    <AssemblyName>Заданиe_16_</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

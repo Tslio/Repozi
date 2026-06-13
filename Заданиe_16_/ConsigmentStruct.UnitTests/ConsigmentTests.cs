@@ -1,4 +1,4 @@
-using Задание__16;
+using Заданиe_16_;
 
 namespace ConsigmentStruct.UnitTests
 {
@@ -33,14 +33,14 @@ namespace ConsigmentStruct.UnitTests
             Assert.That(c.Cost, Is.EqualTo(25.50));
         }
 
-            [Test]
-            public void ToStringTest()
-            {
-                var c = new Consigment(100, 250.5);
-                Assert.That(c.ToString(), Is.EqualTo("100 шт. по 250.50 руб."));
-            }
         [Test]
-            public void EqualsTest()
+        public void ToStringTest()
+        {
+            var c = new Consigment(100, 250.5);
+            Assert.That(c.ToString(), Is.EqualTo("100 шт. по 250.50 руб."));
+        }
+        [Test]
+        public void EqualsTest()
         {
             var a = new Consigment(10, 5.50);
             var b = new Consigment(10, 5.50);
@@ -79,7 +79,6 @@ namespace ConsigmentStruct.UnitTests
         {
             var a = new Consigment(10, 5.00);
             var b = new Consigment(4, 5.00);
-
             var result = a - b;
 
             Assert.That(result.Quantity, Is.EqualTo(6));

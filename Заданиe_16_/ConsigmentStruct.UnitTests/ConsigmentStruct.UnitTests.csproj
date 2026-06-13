@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Задание__16\Задание__16.csproj" />
+    <ProjectReference Include="..\Заданиe_16_\Заданиe_16_.csproj" />
   </ItemGroup>
 
   <ItemGroup>

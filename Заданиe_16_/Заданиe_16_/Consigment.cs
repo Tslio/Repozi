@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Задание__16
+namespace Заданиe_16_
 {
     public struct Consigment
     {
@@ -32,7 +32,7 @@ namespace Задание__16
                 price = Math.Round(value, 2);
             }
         }
-        public double Cost
+            public double Cost
         {
             get => Math.Round(Quantity * Price, 2);
         }
